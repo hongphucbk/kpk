@@ -1,0 +1,131 @@
+
+/*================================== CONTACT ===========================*/
+#contact{
+    padding: 100px 0 60px;
+}
+.contact .overtitle .title{
+    display: none;
+}
+.location{
+    margin: auto;
+    padding: 30px 0 10px;
+    justify-content: left;
+}
+.location iframe{
+    width: 95%;
+    height: 300px;
+    border: 0;
+}
+
+.contact{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 15px 10px;
+    background-color: rgb(243, 243, 247);    
+}
+.contact-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px 20px;
+
+}
+
+.contact-col{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 15px;    
+}
+/*
+.contact-info{
+    padding: 70px 0 0 0;
+}*/
+.single-contact-info{
+    position: relative;
+    padding: 10px 0 0;
+    display: flex;
+    width: 100%;
+}
+.single-contact-info .icon{
+    display: flex;
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    border-color: #111;
+}
+.single-contact-info .contact-text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: var(--orange-color);
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact-col-form{
+    padding: 0 20px 20px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+.contact-form-area{
+    padding: 15px 0 0;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 964px){
+   .contact-row{
+       flex-direction: column;
+   }
+    .contact-col-info{
+       flex-direction: row;
+       width: 100%;
+   }
+    .contact-info{
+       float: left;
+       width: 100%;
+   }
+    .contact-col-info .contact-info{
+       padding: 20px auto;
+   }
+    /*.contact-col-info .single-contact-info{
+
+    }*/
+    .location{
+        display: none;
+    }
+   .contact-col{
+       width: 100%;
+       padding: 0 0 20px;
+   }
+   .contact .overtitle .title{
+        display: block;
+        text-align: center;
+    }       
+   .contact-col-form .contact-title{
+       display: none;
+   }
+}

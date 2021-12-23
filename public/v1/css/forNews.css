@@ -1,0 +1,204 @@
+@import url(https://fonts.google.com/specimen/Roboto?category=Serif,Sans+Serif,Display&stylecount=5&selection.family=Poppins:300,400,500,600,700&subset=vietnamese);
+p{
+    font-family: 'Roboto', sans-serif;
+}
+.news-container{
+    width: 100%;
+    padding: 140px 8%;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+.post{
+    width: 75%;
+    /*background: #e8e8e8;*/
+    float: left;
+    padding: 0 5% 0 0;
+}
+.sidebar{
+    width: 25%;
+    /*background: #b1b1b1;*/
+    float: right;
+    padding: auto;
+}
+.clear{
+    clear: both;
+}
+
+.post .post-title{
+    padding: 0 0 10px;
+}
+.post .post-title h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.post .icon{
+    color: #e08d20;
+}
+.post img{
+    position: relative;
+    padding: 10px;
+    width: 80%;
+}
+.post .post-image{
+    text-align: center;
+}
+.post .post-content{
+    border-top: 0.5px dotted rgb(88, 88, 88);
+    border-bottom: 0.5px dotted rgb(88, 88, 88);
+}
+.post .post-content p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.post .author{
+    justify-content: right;
+}
+
+
+.sidebar .title h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #e08d20;
+}
+
+.sidebar .news-category-item{
+    border-bottom: 0.5px solid #e08d20;
+    padding: 10px;
+}
+.sidebar img{
+    width: 9rem;
+}
+.sidebar ul li {
+    list-style: none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: rgb(41, 40, 40);
+}
+.sidebar .news-category-items ul li a:hover{
+    color: #e08d20;
+    padding-left: 0.5rem;
+    transition: 0.5s;
+}
+
+.sidebar .news-others{
+    padding: 30px 0 0;
+}
+.sidebar .news-others-item{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 0.5px solid #e08d20;
+}
+.sidebar .other-image{
+    width: 50%;
+    float: left;
+    padding: auto;
+    overflow: hidden;
+    position: relative;
+}
+.sidebar .other-image:hover img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.sidebar .other-item-content{
+    width: 50%;
+    float: right;
+    justify-content: center;
+    padding: 3px;
+}
+/*
+.sidebar .news-others-item:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}*/
+.sidebar .news-others-item a:hover{
+    color: #e08d20;
+}
+
+.post .news-related{
+    padding: 20px 0;
+}
+.post .news-related-title{
+    padding: 10px 0;
+    border: 1px solid rgb(31, 10, 107);
+    background-color: rgb(31, 10, 107);
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+.post .news-related .content{
+    display: flex;
+}
+.post .news-related .content .content-box{
+    position: relative;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+}
+.post .news-related .content .content-box img{
+    width: 100%;
+    padding: 20px 0 0;
+    overflow: hidden;
+}
+.post .news-related .content .content-box img:hover{
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.post .news-related .content .content-box h2 a{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+.post .news-related .content .content-box h2 a:hover{
+    color: #e08d20;
+    transition: 0.25;
+}
+@media (max-width: 1048px) {
+    .content{
+        padding: 30px;
+    }
+    .news-container{
+        padding: 70px 0 0;
+    }
+    .post{
+        width: 100%;
+        padding: auto 10px;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .post .news-related .content{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .post .news-related .content .content-box{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2%;
+    }
+    .post .news-related .content .content-box-image{
+        width: 40%;
+        float: left;
+    }
+    .post .news-related .content .content-box-title{
+        width: 60%;
+        float: right;
+        padding: 2%;
+    }
+    .post .news-related .content .content-box-title h2{
+        size: 10rem;
+    }
+    .post .news-related .content-box .content-box-title p{
+        display: none;
+    }
+}

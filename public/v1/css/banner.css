@@ -1,0 +1,26 @@
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(image/banner.jpg);
+    background-size: cover;
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 3em;
+    color: #fff;
+}
+.banner .content p
+{
+    font-size: 1em;
+    color: #fff;
+}
